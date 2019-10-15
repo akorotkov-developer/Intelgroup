@@ -1,0 +1,156 @@
+/* team */
+
+.team {
+	float: left;
+	margin-left: 20px;
+	padding: 42px 0px 48px 0px;
+	width: 620px;
+}
+
+.team .fullline {
+	display: none;
+}
+
+.team h3 {
+    margin: 0px 0px 28px 0px;
+    display: block;
+    padding: 0px;
+    font-family: 'Myriad';
+    font-size: 31px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000000;
+
+}
+
+.team .col {
+	float: left;
+	margin-left: 20px;
+	width: 300px;
+}
+
+.team .col:first-child {
+	margin-left: 0px;
+}
+
+.team .item {
+	padding-top: 20px;
+	overflow: hidden;
+}
+
+.team .item:first-child {
+	padding-top: 0px;
+}
+
+.team .item img {
+	display: block;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	width: 62px;
+	width: 62px;
+}
+	
+.team .item span.person {
+	display: block;
+	margin-left: 82px;
+	font-weight: bold;
+}
+
+.team .item span.about {
+	display: block;
+	margin-left: 82px;
+}
+
+/* ************************************************************************* */
+
+@media (max-width: 967px) {
+
+.team {
+	margin-left: 14px;
+	width: 490px;
+}
+
+.team .col {
+	margin-left: 14px;
+	width: 238px;
+}
+
+.team .col:first-child {
+	margin-left: 0px;
+}
+
+}
+
+/* ************************************************************************* */
+
+@media (max-width: 767px) {
+
+.team {
+	margin-left: 20px;
+	width: 300px;
+}
+
+.team h3 {
+	margin: 0px 0px 26px 0px;
+	font-size: 33px;
+}
+
+.team .col {
+	float: none;
+	margin-top: 20px;
+	margin-left: 0px;
+	width: 300px;
+}
+
+.team .col:first-child {
+	margin-top: 0px;
+}
+
+}
+
+/* ************************************************************************* */
+
+@media (max-width: 645px) {
+
+.team {
+	margin-left: 14px;
+	width: 238px;
+}
+
+.team .col {
+	width: 238px;
+}
+
+}
+
+/* ************************************************************************* */
+
+@media (max-width: 513px) {
+
+.team {
+	float: none;
+	margin-left: 0px;
+	padding: 0px 0px 48px 0px;
+	width: 100%;
+}
+
+.team .fullline {
+	display: block;
+	left: 0px;
+}
+
+.team h3 {
+	padding-top: 44px;
+	font-size: 29px;
+}
+
+}
+
+/* ************************************************************************* */
+
+@media (max-width: 331px) {
+
+}
+

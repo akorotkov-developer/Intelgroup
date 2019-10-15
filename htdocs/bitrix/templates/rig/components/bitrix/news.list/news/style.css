@@ -1,0 +1,96 @@
+/* news */
+
+.news {
+	float: left;
+	padding: 42px 0px 48px 0px;
+	width: 300px;
+}
+
+.news h3 {
+    margin: 0px 0px 28px 0px;
+    display: block;
+    padding: 0px;
+    font-family: 'Myriad';
+    font-size: 31px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.news .item {
+	padding-top: 28px;
+}
+
+.news .item:first-child {
+	padding-top: 0px;
+}
+
+.news .item span.about {
+	display: block;
+}
+
+.news .item span.about span.date {
+	display: block;
+	font-weight: bold;
+}
+
+.news .item span.about a {
+	display: block;
+}
+
+/* ************************************************************************* */
+
+@media (max-width: 967px) {
+
+.news {
+	width: 238px;
+}
+
+}
+
+/* ************************************************************************* */
+
+@media (max-width: 767px) {
+
+.news {
+	width: 300px;
+}
+
+.news h3 {
+	margin: 0px 0px 26px 0px;
+	font-size: 33px;
+}
+
+}
+
+/* ************************************************************************* */
+
+@media (max-width: 645px) {
+
+.news {
+	width: 238px;
+}
+
+}
+
+/* ************************************************************************* */
+
+@media (max-width: 513px) {
+
+.news {
+	float: none;
+	width: 100%;
+}
+
+.news h3 {
+	font-size: 29px;
+}
+
+}
+
+/* ************************************************************************* */
+
+@media (max-width: 331px) {
+
+}
+

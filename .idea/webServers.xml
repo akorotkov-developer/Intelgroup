@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="c8ab33e9-0290-4966-b9da-0f6ec85a8487" name="intelgoup" url="http://intelgroup.ru">
+        <fileTransfer host="intelgroup.ru" port="22" rootFolder="/pub/home/intelgroup" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

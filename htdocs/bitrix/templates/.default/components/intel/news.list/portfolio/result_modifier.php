@@ -1,0 +1,5 @@
+<?
+CModule::IncludeModule("iblock");
+
+
+?>

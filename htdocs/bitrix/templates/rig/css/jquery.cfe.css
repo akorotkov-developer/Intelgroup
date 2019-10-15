@@ -1,0 +1,407 @@
+div.custom-form-element, div.custom-form-element div {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	outline: 0px;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-user-select: none;
+}
+
+/* checkbox */
+
+div.cfe-checkbox {
+	width: 23px;
+	height: 23px;
+}
+
+div.cfe-checkbox div.cfe-value {
+	display: none;
+}
+
+div.cfe-checkbox div.cfe-icon {
+	padding: 0px 0px 1px 0px;
+	width: 19px;
+	height: 19px;
+	border: 1px solid #bbbbbb;
+	border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+	line-height: 19px;
+	text-align: center;
+	font-family: 'FontAwesome';
+	font-size: 13px;
+	color: #ffffff;
+	background-color: #ffffff;
+	box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+}
+
+div.cfe-checkbox.cfe-off div.cfe-icon {
+	cursor: default;
+}
+
+div.cfe-checkbox.cfe-focus div.cfe-icon {
+}
+
+div.cfe-checkbox.cfe-hover div.cfe-icon {
+	border-color: #bbbbbb;
+}
+
+div.cfe-checkbox.cfe-active div.cfe-icon {
+	background-color: #bbbbbb;
+}
+
+div.cfe-checkbox.cfe-active.cfe-hover div.cfe-icon {
+	border-color: #bbbbbb;
+	background-color: #bbbbbb;
+}
+
+/* text, password */
+
+div.cfe-text {
+	width: 100%;
+	height: 30px;
+}
+
+div.cfe-text input {
+	display: block;
+	margin: 0px;
+	padding: 3px 4px 4px 4px;
+	width: 0px;
+	height: 21px;
+	border: 1px solid #bbbbbb;
+	outline: 0px;
+	line-height: 21px;
+	font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #2f2f2f;
+	background-color: #ffffff;
+	box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* textarea */
+
+div.cfe-textarea {
+	width: 100%;
+	overflow: hidden;
+	box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+div.cfe-textarea div.cfe-area {
+	height: 0px;
+	margin-right: 29px;
+}
+
+div.cfe-textarea.cfe-noscroll div.cfe-area {
+	margin-right: 0px;
+}
+
+div.cfe-textarea div.cfe-area textarea {
+	display: block;
+	margin: 0px;
+	padding: 3px 4px 4px 4px;
+	width: 0px;
+	height: 0px;
+	border-top: 1px solid #bbbbbb;
+	border-bottom: 1px solid #bbbbbb;
+	border-left: 1px solid #bbbbbb;
+	border-right: 0px;
+	outline: 0px;
+	line-height: 21px;
+	font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #2f2f2f;
+	background-color: #ffffff;
+	overflow: hidden;
+	resize: none;
+}
+
+div.cfe-textarea.cfe-noscroll div.cfe-area textarea {
+	border-right: 1px solid #bbbbbb;
+}
+
+div.cfe-textarea div.cfe-scroller {
+	float: right;
+	border-right: 1px solid #bbbbbb;
+	width: 28px;
+	height: 0px;
+}
+
+div.cfe-textarea.cfe-noscroll div.cfe-scroller {
+	display: none;
+}
+
+div.cfe-textarea div.cfe-scroller div.cfe-arrow-up {
+	width: 28px;
+	height: 21px;
+	padding: 3px 0px 4px 0px;
+	border: 0px;
+	border-top: 1px solid #bbbbbb;
+	line-height: 21px;
+	text-align: center;
+	font-family: 'FontAwesome';
+	font-size: 12px;
+	color: #a7a7a7;
+	background-color: #dddddd;
+	cursor: default;
+}
+
+div.cfe-textarea div.cfe-scroller div.cfe-arrow-up.cfe-active {
+	color: #747474;
+	cursor: pointer;
+}
+
+div.cfe-textarea div.cfe-scroller div.cfe-arrow-down {
+	width: 28px;
+	height: 21px;
+	padding: 3px 0px 4px 0px;
+	border: 0px;
+	border-bottom: 1px solid #bbbbbb;
+	line-height: 21px;
+	text-align: center;
+	font-family: 'FontAwesome';
+	font-size: 12px;
+	color: #a7a7a7;
+	background-color: #dddddd;
+	cursor: default;
+}
+
+div.cfe-textarea div.cfe-scroller div.cfe-arrow-down.cfe-active {
+	color: #747474;
+	cursor: pointer;
+}
+
+div.cfe-textarea div.cfe-scroller div.cfe-scrollfield {
+	width: 28px;
+	height: 0px;
+	border-right: 1px solid #bbbbbb;
+	background-color: #dddddd;
+	overflow: hidden;
+}
+
+div.cfe-textarea div.cfe-scroller div.cfe-scrollfield div.cfe-scrollbar {
+	width: 28px;
+	height: 0px;
+	margin-top: 0px;
+	background-color: #a7a7a7;
+	cursor: default;
+}
+
+div.cfe-textarea.cfe-hover div.cfe-area textarea {
+}
+
+div.cfe-textarea div.cfe-scroller div.cfe-arrow.cfe-active:hover {
+	color: #ffffff;
+}
+
+div.cfe-textarea.cfe-bar div.cfe-scroller div.cfe-scrollfield div.cfe-scrollbar {
+	background-color: #747474;
+}
+
+/* cfe-button */
+
+div.cfe-button {
+	width: 100%;
+	height: 40px;
+}
+
+div.cfe-button div.cfe-value {
+	display: none;
+}
+
+div.cfe-button div.cfe-name {
+	padding: 9px 4px 9px 4px;
+	height: 22px;
+	border: 0px;
+	text-align: center;
+	line-height: 22px;
+	font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: #ffffff;
+	background-color: #bbbbbb;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+div.cfe-button.cfe-hover div.cfe-name {
+	background-color: #747474;
+}
+
+/* select */
+
+div.cfe-select {
+	line-height: 21px;
+	font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+
+div.cfe-select div.cfe-value {
+	display: none;
+}
+
+div.cfe-select div.cfe-box {
+	border: 1px solid #bbbbbb;
+	height: 28px;
+	box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	overflow: hidden;
+}
+
+div.cfe-select div.cfe-box div.cfe-name {
+	padding: 3px 4px 4px 4px;
+	margin: 0px 30px 0px 0px;
+	height: 21px;
+	border: 0px;
+	line-height: 21px;
+	color: #2f2f2f;
+	background-color: #ffffff;
+	overflow: hidden;
+}
+
+div.cfe-select div.cfe-box div.cfe-icon {
+	float: right;
+	padding: 3px 0px 4px 0px;
+	width: 28px;
+	height: 21px;
+	border: 0px;
+	line-height: 21px;
+	text-align: center;
+	font-family: 'FontAwesome';
+	font-size: 12px;
+	color: #747474;
+	background-color: #dddddd;
+}
+
+div.cfe-select div.cfe-list {
+	display: none;
+	position: absolute;
+	padding: 0px;
+	margin: 1px 0px 0px 0px;
+	outline: 0px;
+	width: 0px;
+	height: 0px;
+	border: 1px solid #bbbbbb;
+	background-color: #ffffff;
+	overflow: hidden;
+	z-index: 10;
+}
+
+div.cfe-select.cfe-multiple div.cfe-list {
+	position: static;
+}
+
+div.cfe-select.cfe-open div.cfe-list {
+	display: block;
+}
+
+div.cfe-select div.cfe-list div.cfe-area {
+	height: 0px;
+	margin-top: 0px;
+	margin-right: 28px;
+}
+
+div.cfe-select div.cfe-list div.cfe-area div.cfe-item {
+	height: 21px;
+	padding: 3px 0px 4px 4px;
+	white-space: nowrap;
+	color: #2b2b2b;
+	background-color: transparent;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+div.cfe-select div.cfe-list div.cfe-scroller {
+	float: right;
+	width: 30px;
+	height: 0px;
+}
+
+div.cfe-select div.cfe-list div.cfe-scroller div.cfe-arrow-up {
+	width: 28px;
+	height: 21px;
+	padding: 3px 0px 4px 0px;
+	line-height: 21px;
+	text-align: center;
+	font-family: 'FontAwesome';
+	font-size: 12px;
+	color: #a7a7a7;
+	background-color: #dddddd;
+	cursor: default;
+}
+
+div.cfe-select div.cfe-list div.cfe-scroller div.cfe-arrow-up.cfe-active {
+	color: #747474;
+	cursor: pointer;
+}
+
+div.cfe-select div.cfe-list div.cfe-scroller div.cfe-arrow-down {
+	width: 28px;
+	height: 21px;
+	padding: 3px 0px 4px 0px;
+	line-height: 21px;
+	text-align: center;
+	font-family: 'FontAwesome';
+	font-size: 12px;
+	color: #a7a7a7;
+	background-color: #dddddd;
+	cursor: default;
+}
+
+div.cfe-select div.cfe-list div.cfe-scroller div.cfe-arrow-down.cfe-active {
+	color: #747474;
+	cursor: pointer;
+}
+
+div.cfe-select div.cfe-list div.cfe-scroller div.cfe-scrollfield {
+	width: 28px;
+	height: 0px;
+	background-color: #dddddd;
+	overflow: hidden;
+}
+
+div.cfe-select div.cfe-list div.cfe-scroller div.cfe-scrollfield div.cfe-scrollbar {
+	width: 28px;
+	height: 0px;
+	margin-top: 0px;
+	background-color: #a7a7a7;
+}
+
+div.cfe-select.cfe-off div.cfe-box {
+	cursor: default;
+}
+
+div.cfe-select div.cfe-box:hover div.cfe-icon {
+	color: #ffffff;
+}
+
+div.cfe-select div.cfe-list div.cfe-scroller div.cfe-arrow.cfe-active:hover {
+	color: #ffffff;
+}
+
+div.cfe-select.cfe-bar div.cfe-list div.cfe-scroller div.cfe-scrollfield div.cfe-scrollbar {
+	background-color: #747474;
+}
+
+div.cfe-select div.cfe-list div.cfe-area div.cfe-item.cfe-active {
+	background-color: #b7b7b7;
+}
+
+div.cfe-select.cfe-focus div.cfe-list div.cfe-area div.cfe-item.cfe-active {
+}
+
+div.cfe-select div.cfe-list div.cfe-area div.cfe-item:hover {
+	color: #ff2100;
+}

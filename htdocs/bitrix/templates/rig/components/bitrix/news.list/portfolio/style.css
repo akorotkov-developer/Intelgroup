@@ -1,0 +1,494 @@
+/* portfolio */
+.load_more {
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+	cursor: pointer;
+	font-size: 18px;
+}
+
+.portfolio-outer {
+    position: relative;
+    float: left;
+    left: 50%;
+	margin-bottom: 37px;
+}
+
+.portfolio-inner {
+    position:relative;
+    float: left;
+    left: -50%;
+}
+
+ul.portfolio {
+	display: block;
+	float: left;
+	margin: 0px -1px 0px -1px;
+	padding: 0px;
+	overflow: hidden;
+}
+
+ul.portfolio li {
+	display: block;
+	float: left;
+	margin: 11px 8px 11px 8px;
+	padding: 0px;
+	width: 298px;
+	box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.18);
+	cursor: pointer;
+}
+
+ul.portfolio li:first-child + li + li + li {
+	clear: left;
+}
+
+ul.portfolio li:first-child + li + li + li + li + li + li {
+	clear: left;
+}
+
+ul.portfolio li a {
+	display: block;
+	margin: 0px;
+	padding: 16px;
+	color: #000000;
+	text-decoration: none;
+	background-color: #ffffff;
+}
+
+ul.portfolio li a img {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	width: 100%;
+	height: auto;
+}
+
+/*
+ul.portfolio li a span.title {
+	display: block;
+	margin: 0px;
+	padding: 20px 0px 0px 0px;
+	line-height: 0px;
+	font-family: 'Myriad';
+	font-size: 0px;
+	font-weight: bold;
+	word-spacing: 0px;
+	letter-spacing: 0px;
+	text-transform: uppercase;
+}
+
+ul.portfolio li a span.title span.fix {
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+	width: 0px;
+	height: 24px;
+}
+
+ul.portfolio li a span.title span.text {
+	display: inline;
+	vertical-align: 6px;
+	font-size: 20px;
+	word-spacing: normal;
+	letter-spacing: normal;
+}
+
+ul.portfolio li a span.description {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	color: #2f2f2f;
+}
+*/
+
+ul.portfolio li a span.title {
+	display: block;
+	margin: 0px;
+	padding: 20px 0px 0px 0px;
+	line-height: 22px;
+	font-family: 'Myriad';
+	font-size: 10px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+ul.portfolio li a span.title span.fix {
+	display: none;
+}
+
+ul.portfolio li a span.title span.text {
+	display: inline;
+	font-size: 20px;
+}
+
+ul.portfolio li a span.description {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	color: #2f2f2f;
+}
+
+/* popup */
+
+#shadow.portfolio #popup {
+	display: block;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+#shadow.portfolio #popup .area {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+#shadow.portfolio #popup .area .media {
+	position: absolute;
+	top: 140px;
+	right: 64px;
+	bottom: 0px;
+	left: 64px;
+	background-color: #f2f2f2;
+	box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.28);
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+#shadow.portfolio #popup .area .media .item {
+	padding: 0px 64px 0px 64px;
+	border-top: 1px dotted #ffffff;
+	min-height: 100%;
+	text-align: center;
+}
+
+#shadow.portfolio #popup .area .media .item:first-child {
+	border-top: 0px;
+}
+
+#shadow.portfolio #popup .area .media .item > img {
+	display: inline-block;
+	padding-top: 64px;
+	padding-bottom: 64px;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+#shadow.portfolio #popup .area .media .item .video {
+	display: inline-block;
+	padding-top: 64px;
+	margin-right: auto;
+	padding-bottom: 64px;
+	margin-left: auto;
+	width: 480px;
+	height: 400px;
+	vertical-align: middle;
+}
+
+#shadow.portfolio #popup .area .media .item span.fix {
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+	width: 0px;
+	height: 100%;
+	vertical-align: middle;
+}
+
+#shadow.portfolio #popup .area .vars {
+	display: none;
+}
+
+#shadow.portfolio #popup .area .navigation {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	padding-top: 140px;
+	width: 64px;
+	overflow: hidden;
+}
+
+#shadow.portfolio #popup .area .navigation .button {
+	margin: 0px 0px 1px 34px;
+	width: 30px;
+	height: 30px;
+	background-color: #ffffff;
+	box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.28);
+	cursor: pointer;
+}
+
+#shadow.portfolio #popup .area .navigation .button.active {
+	cursor: default;
+}
+
+#shadow.portfolio #popup .area .about {
+	position: absolute;
+	top: 0px;
+	right: 64px;
+	left: 64px;
+	padding: 0px 64px 0px 64px;
+	height: 140px;
+	background-color: #ffffff;
+	overflow: hidden;
+}
+
+#shadow.portfolio #popup .area .about .prev {
+	display: none;
+	position: absolute;
+	top: 58px;
+	left: 22px;
+	margin: 0px;
+	padding: 0px;
+	border-top: 12px solid transparent;
+	border-right: 20px solid #a9a9a9;
+	border-bottom: 12px solid transparent;
+	width: 0px;
+	height: 0px;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+#shadow.portfolio #popup .area .about .prev.hv {
+	border-right: 20px solid #ff2100;
+}
+
+#shadow.portfolio #popup .area .about .next {
+	display: none;
+	position: absolute;
+	top: 58px;
+	right: 22px;
+	margin: 0px;
+	padding: 0px;
+	border-top: 12px solid transparent;
+	border-bottom: 12px solid transparent;
+	border-left: 20px solid #a9a9a9;
+	width: 0px;
+	height: 0px;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+#shadow.portfolio #popup .area .about .next.hv {
+	border-left: 20px solid #ff2100;
+}
+
+#shadow.portfolio #popup .area .about > .fix {
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+	width: 0px;
+	height: 100%;
+	vertical-align: middle;
+}
+
+#shadow.portfolio #popup .area .about p {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#shadow.portfolio #popup .area .about p span.title {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	line-height: 0px;
+	font-family: 'Myriad';
+	font-size: 0px;
+	font-weight: bold;
+	word-spacing: 0px;
+	letter-spacing: 0px;
+	text-transform: uppercase;
+}
+
+#shadow.portfolio #popup .area .about p span.title span.fix {
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+	width: 0px;
+	height: 24px;
+}
+
+#shadow.portfolio #popup .area .about p span.title span.text {
+	display: inline;
+	vertical-align: 6px;
+	line-height: 24px;
+	font-size: 20px;
+	word-spacing: normal;
+	letter-spacing: normal;
+	color: #000000;
+}
+
+#shadow.portfolio #popup .area .about p span.description {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	color: #2f2f2f;
+}
+
+#shadow.portfolio #popup .area.next {
+	left: 110%;
+}
+
+#shadow.portfolio #popup .area.prev {
+	left: -110%;
+}
+
+/* ************************************************************************* */
+
+@media (max-width: 967px) {
+
+ul.portfolio li {
+	margin: 11px 6px 11px 6px;
+	width: 236px;
+}
+
+#shadow.portfolio #popup .area .media {
+	top: 120px;
+	right: 44px;
+	left: 44px;
+}
+
+#shadow.portfolio #popup .area .media .item {
+	padding: 0px 24px 0px 24px;
+}
+
+#shadow.portfolio #popup .area .media .item img {
+	margin-top: 24px;
+	margin-bottom: 24px;
+}
+
+#shadow.portfolio #popup .area .navigation {
+	padding-top: 120px;
+	width: 44px;
+}
+
+#shadow.portfolio #popup .area .navigation .button {
+	margin: 0px 0px 1px 14px;
+}
+
+#shadow.portfolio #popup .area .about {
+	right: 44px;
+	left: 44px;
+	padding: 0px 44px 0px 44px;
+	height: 120px;
+}
+
+#shadow.portfolio #popup .area .about .prev {
+	top: 48px;
+	left: 12px;
+}
+
+#shadow.portfolio #popup .area .about .next {
+	top: 48px;
+	right: 12px;
+}
+
+}
+
+/* ************************************************************************* */
+
+@media (max-width: 767px) {
+
+ul.portfolio li {
+	margin: 11px 8px 11px 8px;
+	width: 298px;
+}
+
+ul.portfolio li:first-child + li + li + li {
+	clear: none;
+}
+
+ul.portfolio li:first-child + li + li {
+	clear: left;
+}
+
+ul.portfolio li:first-child + li + li + li + li {
+	clear: left;
+}
+
+ul.portfolio li:first-child + li + li + li + li + li + li + li + li {
+	clear: left;
+}
+
+}
+
+/* ************************************************************************* */
+
+@media (max-width: 645px) {
+
+ul.portfolio li {
+	margin: 11px 6px 11px 6px;
+	width: 236px;
+}
+
+}
+
+/* ************************************************************************* */
+
+@media (max-width: 513px) {
+
+ul.portfolio {
+	padding-top: 11px;
+	padding-bottom: 11px;
+}
+
+ul.portfolio li {
+	clear: none;
+	float: none;
+	margin: 22px 8px 0px 8px;
+	width: 298px;
+}
+
+ul.portfolio li:first-child {
+	margin: 0px 8px 0px 8px;
+}
+
+}
+
+/* ************************************************************************* */
+
+@media (max-width: 331px) {
+
+ul.portfolio li {
+	margin: 22px 6px 0px 6px;
+	width: 236px;
+}
+
+ul.portfolio li:first-child {
+	margin: 0px 6px 0px 6px;
+}
+
+ul.portfolio li a span.title span.fix {
+	height: 20px;
+}
+
+ul.portfolio li a span.title span.text {
+	vertical-align: 6px;
+	font-size: 17px;
+}
+
+}
+
+/* ************************************************************************* */
+
+@media (max-width: 248px) {
+
+ul.portfolio li {
+	margin: 22px 6px 0px 6px;
+	width: 208px;
+}
+
+ul.portfolio li:first-child {
+	margin: 0px 6px 0px 6px;
+}
+
+ul.portfolio li a {
+	padding: 12px;
+}
+
+}

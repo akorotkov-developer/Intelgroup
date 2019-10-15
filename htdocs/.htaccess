@@ -1,0 +1,48 @@
+AddDefaultCharset UTF-8
+Options -Indexes 
+ErrorDocument 404 /404.php
+
+<IfModule mod_rewrite.c>
+  Options +FollowSymLinks
+  RewriteEngine On
+
+  RewriteRule ^about/news/717/?$ /about/news/853/ [L,R=301]
+  RewriteRule ^about/news/659/?$ /about/news/852/ [L,R=301]
+  RewriteRule ^about/news/522/?$ /about/news/851/ [L,R=301]
+  RewriteRule ^about/news/400/?$ /about/news/850/ [L,R=301]
+  RewriteRule ^about/news/372/?$ /about/news/849/ [L,R=301]
+
+  RewriteRule ^about/actions/579/?$ /about/actions/930/ [L,R=301]
+  RewriteRule ^about/actions/577/?$ /about/actions/929/ [L,R=301]
+  RewriteRule ^about/actions/578/?$ /about/actions/928/ [L,R=301]
+</IfModule>
+
+
+<IfModule mod_php5.c>
+  php_flag allow_call_time_pass_reference 1
+  php_flag session.use_trans_sid off
+
+  #php_value display_errors 1
+
+  php_value mbstring.func_overload 2
+  php_value mbstring.internal_encoding UTF-8
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !/bitrix/urlrewrite.php$
+  RewriteRule ^(.*)$ /bitrix/urlrewrite.php [L]
+  RewriteRule .* - [E=REMOTE_USER:%{HTTP:Authorization}]
+</IfModule>
+
+<IfModule mod_dir.c>
+  DirectoryIndex index.php index.html
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive on
+  ExpiresByType image/jpeg "access plus 3 day"
+  ExpiresByType image/gif "access plus 3 day"
+</IfModule>

@@ -1,0 +1,240 @@
+.recommendationslist .item {
+	margin-top: 32px;
+	overflow: hidden;
+}
+
+.recommendationslist .item:first-child {
+	margin-top: 0px;
+}
+
+.recommendationslist .item img {
+	display: block;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	border: 5px solid #ffffff;
+	width: 290px;
+	cursor: pointer;
+}
+
+.recommendationslist .item img.hv {
+	border: 5px solid #ff2100;
+}
+
+.recommendationslist .item .about {
+	display: block;
+	margin-left: 320px;
+	font-weight: bold;
+}
+
+.recommendationslist .item .description {
+	display: block;
+	margin-left: 320px;
+	padding-top: 12px;
+}
+
+#shadow.recommendations #popup {
+	display: block;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+#shadow.recommendations #popup .area {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+#shadow.recommendations #popup .area .aleft {
+	float: left;
+	padding: 0px 22px 0px 22px;
+	width: 20px;
+	height: 100%;
+}
+
+#shadow.recommendations #popup .area .aright {
+	float: right;
+	padding: 0px 22px 0px 22px;
+	width: 20px;
+	height: 100%;
+}
+
+#shadow.recommendations #popup .area .main {
+	margin-left: 64px;
+	margin-right: 64px;
+	height: 100%;
+	text-align: center;
+}
+
+#shadow.recommendations #popup .area .main img {
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+	max-width: 100%;
+	max-height: 96%;
+	vertical-align: middle;
+}
+
+#shadow.recommendations #popup .area .vars {
+	display: none;
+}
+
+#shadow.recommendations #popup .area span.fix {
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+#shadow.recommendations #popup .area .aleft span.prev {
+	display: none;
+	margin: 0px;
+	padding: 0px;
+	border-top: 12px solid transparent;
+	border-right: 20px solid #ffffff;
+	border-bottom: 12px solid transparent;
+	width: 0px;
+	height: 0px;
+	vertical-align: middle;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+#shadow.recommendations #popup .area .aleft span.prev.hv {
+	border-right: 20px solid #ff2100;
+}
+
+#shadow.recommendations #popup .area .aright span.next {
+	display: none;
+	margin: 0px;
+	padding: 0px;
+	border-top: 12px solid transparent;
+	border-bottom: 12px solid transparent;
+	border-left: 20px solid #ffffff;
+	width: 0px;
+	height: 0px;
+	vertical-align: middle;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+#shadow.recommendations #popup .area .aright span.next.hv {
+	border-left: 20px solid #ff2100;
+}
+
+#shadow.recommendations #popup .area.next {
+	left: 110%;
+}
+
+#shadow.recommendations #popup .area.prev {
+	left: -110%;
+}
+
+/* ************************************************************************* */
+
+@media (max-width: 967px) {
+
+#shadow.recommendations #popup .area .aleft {
+	padding: 0px 12px 0px 12px;
+}
+
+#shadow.recommendations #popup .area .aright {
+	padding: 0px 12px 0px 12px;
+}
+
+#shadow.recommendations #popup .area .main {
+	margin-left: 44px;
+	margin-right: 44px;
+}
+
+}
+
+/* ************************************************************************* */
+
+@media (max-width: 645px) {
+
+.recommendationslist .item img {
+	width: 230px;
+	border: 4px solid #ffffff;
+}
+
+.recommendationslist .item img.hv {
+	border: 4px solid #ff2100;
+}
+
+.recommendationslist .item span.about {
+	margin-left: 254px;
+}
+
+.recommendationslist .item span.description {
+	margin-left: 254px;
+}
+
+}
+
+/* ************************************************************************* */
+
+@media (max-width: 513px) {
+
+.recommendationslist .item img {
+	display: block;
+	float: none;
+	margin: 0px 6px 0px 6px;
+	padding: 0px;
+	width: 290px;
+	border: 5px solid #ffffff;
+}
+
+.recommendationslist .item img.hv {
+	border: 5px solid #ff2100;
+}
+
+.recommendationslist .item span.about {
+	margin-left: 0px;
+	padding: 16px 6px 0px 6px;
+}
+
+.recommendationslist .item span.description {
+	margin-left: 0px;
+	padding: 0px 6px 0px 6px;
+}
+
+}
+
+/* ************************************************************************* */
+
+@media (max-width: 331px) {
+
+.recommendationslist .item {
+	padding: 0px 4px 0px 4px;
+}
+
+.recommendationslist .item img {
+	margin: -4px 0px -4px 0px;
+	padding: 0px;
+	width: 100%;
+	border: 4px solid #ffffff;
+}
+
+.recommendationslist .item img.hv {
+	border: 4px solid #ff2100;
+}
+
+.recommendationslist .item span.about {
+	margin-left: -4px;
+	margin-right: -4px;
+	padding: 16px 0px 0px 0px;
+}
+
+.recommendationslist .item span.description {
+	margin-left: -4px;
+	margin-right: -4px;
+	padding: 0px;
+}
+
+}

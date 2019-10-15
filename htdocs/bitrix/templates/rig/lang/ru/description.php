@@ -1,0 +1,4 @@
+<?
+$MESS["CSST_TEMPLATE_NAME"] = "RIG";
+$MESS["CSST_TEMPLATE_DESC"] = "";
+?>
