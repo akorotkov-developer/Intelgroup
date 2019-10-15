@@ -22,21 +22,34 @@
 }
 
 ul.portfolio {
-	display: block;
-	float: left;
-	margin: 0px -1px 0px -1px;
-	padding: 0px;
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 8px 5px;
+	margin: auto;
+	float: none;
 	overflow: hidden;
 }
 
 ul.portfolio li {
+	width: 32%;
+	margin: 6px;
 	display: block;
-	float: left;
-	margin: 11px 8px 11px 8px;
-	padding: 0px;
-	width: 298px;
-	box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.18);
-	cursor: pointer;
+}
+@media (max-width: 782px) {
+	ul.portfolio li {
+		width: 49%;
+		margin: 6px;
+		display: block;
+	}
+}
+@media (max-width: 528px) {
+	ul.portfolio li {
+		width: 99%;
+		margin: 6px;
+		display: block;
+	}
 }
 
 ul.portfolio li:first-child + li + li + li {
