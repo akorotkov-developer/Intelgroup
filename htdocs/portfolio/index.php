@@ -9,13 +9,12 @@ if(isset($_REQUEST["SECTION"]) && ($_REQUEST["SECTION"] != '')) {
 }
 ?>
 
-
 <?$APPLICATION->IncludeComponent("bitrix:news.list", "portfolio", array(
 	"IBLOCK_TYPE" => "portfolio",
 	"IBLOCK_ID" => "5",
 	"NEWS_COUNT" => "9",
-	"SORT_BY1" => "ACTIVE_FROM",
-	"SORT_ORDER1" => "ASC",
+	"SORT_BY1" => "TIMESTAMP_X",
+	"SORT_ORDER1" => "DESC",
 	"SORT_BY2" => "DATE_CREATE",
 	"SORT_ORDER2" => "DESC",
 	"FILTER_NAME" => "arrFilter",
